@@ -66,22 +66,54 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.currency {
-  font-family: inherit;
-  font-size: 38px;
-  height: 30px;
-  padding: 12px;
-}
-
-.currency input {
-  font-family: inherit;
-  background-color: #fefefc;
-  border-radius: 3px;
+  justify-content: space-evenly;
+  max-height: 100vh;
+  width: 500px;
+  max-width: 90%;
 }
 
 .btn {
+  background-color: #fff;
+  color: #1d3557;
+  border: 1px solid #1d3557;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: transform 0.2s ease;
+  outline: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(0.5px);
+}
+
+.currency {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+}
+
+.currency input {
+  background-color: #fefefc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.currency:last-of-type {
+  margin-bottom: 20px;
+}
+
+.swap-rate-container {
+  padding: 5px;
 }

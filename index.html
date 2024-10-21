@@ -15,7 +15,7 @@
         <select id="language-select">
           <option value="en">English</option>
           <option value="es">Español</option>
-          <option value="es">Русский</option>
+          <option value="ru">Русский</option>
         </select>
       </div>
     </header>
@@ -78,10 +78,10 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number" id="amount-one" placeholder="0" value="1" />
+        <input type="number" id="amount-one" value="1" />
       </div>
       <div class="swap-rate-container">
-        <button class="btn" id="swap"><i class="fa-solid fa-rotate"></i></button>
+        <button class="btn swap-btn" id="swap"><i class="fa-solid fa-rotate"></i></button>
         <div class="rate" id="rate"></div>
       </div>
       <div class="currency">
@@ -141,7 +141,6 @@
         </select>
         <input type="number" id="amount-two" placeholder="0" />
       </div>
-      <button class="btn" id="convert-btn">Convert</button>
     </div>
     <script src="script.js"></script>
   </body>
