@@ -47,6 +47,7 @@ function calculate() {
     .then((data) => {
       const rates = data.conversion_rates;
       const rate = rates[currency_two];
+      rateEl.classList.remove("hidden");
       rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
       amountEl_two.value = (amountEl_one.value * rate).toFixed(2);
       swapContainer.classList.add("result");

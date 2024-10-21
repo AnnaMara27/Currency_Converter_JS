@@ -58,7 +58,6 @@ h1 {
 p {
   font-size: 18px;
   text-align: center;
-  margin-bottom: 3;
   width: 500px;
   max-width: 90%;
 }
@@ -75,9 +74,9 @@ p {
 
 .btn {
   background-color: #fff;
-  color: #1d3557;
   border: 1px solid #1d3557;
   border-radius: 50%;
+  color: #1d3557;
   height: 40px;
   width: 40px;
   transition: transform 0.2s ease;
@@ -119,6 +118,7 @@ p {
 .swap-rate-container {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 5px;
 }
 
@@ -127,4 +127,14 @@ p {
   align-items: center;
   justify-content: space-around;
   width: 60%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
 }
