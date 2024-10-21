@@ -33,7 +33,6 @@ const translations = {
 function updateLanguage(lang) {
   headerEl.innerText = translations[lang].title;
   descriptionEl.innerText = translations[lang].descriptionText;
-  // headerEl.innerText = translations[lang].title;
 }
 
 function calculate() {
