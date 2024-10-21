@@ -15,12 +15,13 @@
         <select id="language-select">
           <option value="en">English</option>
           <option value="es">Español</option>
+          <option value="fr">Français</option>
           <option value="ru">Русский</option>
         </select>
       </div>
     </header>
-    <h1>Currency Converter</h1>
-    <p>Choose the currency and the amount to get the current exchange rate</p>
+    <h1 id="header">Currency Converter</h1>
+    <p id="description">Choose the currency and the amount to get the current exchange rate</p>
 
     <div class="container" id="container">
       <div class="currency">
@@ -80,7 +81,7 @@
         </select>
         <input type="number" id="amount-one" value="1" />
       </div>
-      <div class="swap-rate-container">
+      <div class="swap-rate-container result" id="swap-container">
         <button class="btn swap-btn" id="swap"><i class="fa-solid fa-rotate"></i></button>
         <div class="rate" id="rate"></div>
       </div>
